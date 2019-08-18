@@ -24,8 +24,10 @@ docker-compose up
 - [x] git
 - [x] svn
 - [x] openjdk-8-jdk
-- [x] gradle
 - [x] eclipse
+- [x] gradle
+- [x] maven
+- [x] nodejs
 
 <details>
 <summary><strong>gotoeasy/ubuntu-desktop</strong></summary>
@@ -43,3 +45,4 @@ docker-compose up
 </details>
 
 # 截图
+![http://gotoeasy.github.io/screenshots/docker-ubuntu-eclipse/eclipse.jpg](http://gotoeasy.github.io/screenshots/docker-ubuntu-eclipse/eclipse.jpg)

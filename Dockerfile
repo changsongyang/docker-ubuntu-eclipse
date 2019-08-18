@@ -11,7 +11,7 @@ ENV PATH $PATH:$MAVEN_HOME/bin:$GRADLE_HOME/bin
 RUN apt-get update && apt-get install -y \
     # git和svn
     git rabbitvcs-cli rabbitvcs-core rabbitvcs-gedit rabbitvcs-nautilus \
-    openjdk-8-jdk \
+    openjdk-8-jdk && \
     # eclipse
     # eclipse \
     wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2019-09/M2/eclipse-committers-2019-09-M2-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \

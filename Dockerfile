@@ -4,22 +4,15 @@ FROM gotoeasy/ubuntu-desktop
 MAINTAINER gotoeasy <gotoeasy@163.com>
 
 # 环境变量
-ENV JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+ENV JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 ENV MAVEN_HOME="/opt/apache-maven-3.6.1"
 ENV GRADLE_HOME="/opt/gradle-5.6"
 ENV PATH $PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
 
-# 安装Java8
-RUN apt-get update && apt-get install -y python-software-properties software-properties-common && \
-    echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
-    add-apt-repository -y ppa:webupd8team/java && \
-    apt-get update && \
-    apt-get install -y oracle-java8-installer && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm -rf /var/cache/oracle-jdk8-installer
-
 # 安装
 RUN apt-get update && apt-get install -y \
+    # java
+    openjdk-8-jdk ca-certificates-java \
     # git和svn
     git rabbitvcs-cli rabbitvcs-core rabbitvcs-gedit rabbitvcs-nautilus && \
     # eclipse安装指定版

@@ -10,7 +10,7 @@ ENV GRADLE_HOME="/opt/gradle-5.6"
 ENV PATH $PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
 
 # 安装Java8
-RUN \
+RUN apt-get update && apt-get install -y add-apt-repository && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
     add-apt-repository -y ppa:webupd8team/java && \
     apt-get update && \

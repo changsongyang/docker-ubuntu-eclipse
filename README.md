@@ -10,10 +10,10 @@
 # 例子
 ```
 // 以后台方式运行容器，指定SSH和VNC端口，默认密码为123456
-docker run -d -p 22:22 -p 5900:5900 gotoeasy/vscode
+docker run -d -p 22:22 -p 5900:5900 gotoeasy/eclipse
 
 // 可以指定密码(必须6位以上)及分辨率
-docker run -d -p 22:22 -p 5900:5900 -e PASSWD=abcd1234 -e SIZE=1024x768 gotoeasy/vscode
+docker run -d -p 22:22 -p 5900:5900 -e PASSWD=abcd1234 -e SIZE=1024x768 gotoeasy/eclipse
 
 // 用docker-compose方式启动，参考配置docker-compose.yml
 docker-compose up

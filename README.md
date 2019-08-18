@@ -23,7 +23,7 @@ docker-compose up
 
 - [x] git
 - [x] svn
-- [x] openjdk-8-jdk
+- [x] java8
 - [x] eclipse (committers 2019-09 M2)
 - [x] gradle (5.6)
 - [x] maven (3.6.1)

@@ -24,10 +24,10 @@ docker-compose up
 - [x] git
 - [x] svn
 - [x] openjdk-8-jdk
-- [x] eclipse
-- [x] gradle
-- [x] maven
-- [x] nodejs
+- [x] eclipse (committers 2019-09 M2)
+- [x] gradle (5.6)
+- [x] maven (3.6.1)
+- [x] nodejs (stable)
 
 <details>
 <summary><strong>gotoeasy/ubuntu-desktop</strong></summary>

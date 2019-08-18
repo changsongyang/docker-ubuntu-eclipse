@@ -11,8 +11,8 @@ ENV PATH $PATH:$MAVEN_HOME/bin:$GRADLE_HOME/bin
 RUN apt-get update && apt-get install -y \
     # git和svn
     git rabbitvcs-cli rabbitvcs-core rabbitvcs-gedit rabbitvcs-nautilus \
-    # jdk和eclipse
-    openjdk-8-jdk eclipse && \
+    # eclipse
+    eclipse && \
     # maven
     wget http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz -O /tmp/maven.tar.gz -q && \
     tar -xf /tmp/maven.tar.gz -C /opt && \
